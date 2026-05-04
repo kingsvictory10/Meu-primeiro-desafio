@@ -1,6 +1,7 @@
-let heroi = "Avatar Aang";
-let xp = 7500
-let nivel = Number(xp);
+let herois = ["Avatar Aang", "Zuko", "Toph Beifong", "Sokka", "Katara"]
+for (let i = 0; i < herois.length; i++) {
+    let heroi = herois[i]
+let xp = Math.floor(Math.random() * 12000)
 if (xp < 1000) {
     console.log( "O herói " + heroi + " está no nível de ferro.")
 }
@@ -25,4 +26,4 @@ else if (xp >= 8000 && xp < 10000) {
 else {
     console.log( "O herói " + heroi + " está no nível de Radiante.")
 }
-console.log("O herói de nome " + heroi + " está no nível de " + xp + ".")
+console.log("O herói de nome " + heroi + " está no nível de " + xp + ".")}
